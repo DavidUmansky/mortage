@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="overlay" onclick="off()">
+        <div id="text">
+            <div id="banner">תיאום פגישת ייעוץ ללא עלות
+            </div>
+            <a id="call-me" href="#"><button class="button-55" role="button">דברו עם יהודה</button></a>
+            <img id="yehuda-img-ban" src="img/306159472_104538199078960_4718250514849944119_n.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            on()
+        }, "3000");
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(81 77 71);
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    border: 1.5px solid white;
+}
+
+#logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 14px;
+    line-height: 28px;
+}
+
+#logo-text span:nth-child(1) {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#logo-text h1:nth-child(2) {
+    color: #d2be67;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar a {
+    padding: 10px 13px;
+    margin: 0 5px;
+    width: 90px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.navbar li {
+    border-left: 1px solid white;
+}
+
+.navbar li:nth-child(5) {
+    border-left:none
+}
+
+.navbar a:hover, a.current {
+    color: #d2be67;
+}
+
+.hero {
+    background: url(../img/bg-image.webp) no-repeat center center/cover;
+    height: 530px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(235 232 221 / 80%);
+}
+
+.hero #slide-photo {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(500px);
+    opacity: 0;
+    animation: move-in 1.5s 1s forwards ease-out;
+} 
+
+.hero h1,p {
+    position: relative;
+    text-align: center;
+    color: #494637;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 50px;
+    padding-top: 20px;
+    width: 500px;
+    margin: auto;
+    line-height: 1.1;
+} 
+
+.hero p {
+    font-size: xx-large;
+    font-weight: 500;
+    margin-top: 16px;
+    width: 700px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.hero span {
+    color: #a95a67;
+} 
+
+.btn {
+    cursor: pointer;
+    padding: 10px 30px;
+    color: #605733;
+    border: 2px solid;
+    position: relative;
+    font-size: x-large;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #605733;
+    color: white;
+}
+
+#home-links-div {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#intro-text {
+    transform: translateY(500px);
+    opacity: 0;
+    animation: move 1.5s forwards ease-out;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 75%);
+    z-index: 2;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translateY(500px);
+    -ms-transform: translate(-50%, -50%);
+    width: 525px;
+    height: 465px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #d2be67;
+    border-radius: 4px;
+    opacity: 0;
+    animation: show-me 1.5s forwards ease-out;
+}
+
+#text #yehuda-img-ban {
+    position: absolute;
+    width: 525px;
+    bottom: 0px;
+    border-top: 2px solid black;
+    border-radius: 0px 0px 4px 4px;
+}
+
+#text #banner {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 107px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transform: translate3d(0, 0px, 0);
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: relative;
+    z-index: 10;
+    animation: mymove 0.8s infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+button img {
+    width: 25px;
+    vertical-align: bottom;
+    margin-left: 7px;
+}
+
+#call-me {
+    position: absolute;
+    left: -30px;
+}
+
+.call-free {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    transform: translateX(-500px);
+    opacity: 0;
+    animation: move-in 1.5s forwards ease-out;
+}
+
+.call-free:hover {
+    background-color: #fff0;
+}
+
+#details {
+    bottom: 160px;
+}
+
+#close-button {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 32px;
+}
+
+#close-button:hover {
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+}
+
+#iconics {
+    position: absolute;
+    bottom: 240px;
+    left: 3px;
+    z-index: 1000;
+    transform: translateX(-500px);
+    opacity: 0;
+    animation: move-in 1.5s forwards ease-out;
+}
+
+#iconics img {
+    width: 25px;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+
+#iconics a:hover {
+    cursor: pointer;
+}
+
+@keyframes show-me {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes mymove {
+    from {
+        box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+        transform: translate3d(0, 0px, 0);
+    }
+
+    to {
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+        transform: translate3d(0, 3px, 0);
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-in {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
