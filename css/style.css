@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Heebo', sans-serif;
-    overflow: hidden;
 }
 
 .navbar {
@@ -74,20 +73,20 @@ body {
 }
 
 .navbar li:nth-child(5) {
-    border-left:none
+    border-left: none
 }
 
 .navbar a:hover, a.current {
     color: #d2be67;
 }
 
-.hero {
+.hero, #hero-2 {
     background: url(../img/bg-image.webp) no-repeat center center/cover;
     height: 530px;
     position: relative;
 }
 
-.hero::before {
+.hero::before, #hero-2::before {
     content: '';
     position: absolute;
     top: 0;
@@ -103,9 +102,9 @@ body {
     transform: translateX(500px);
     opacity: 0;
     animation: move-in 1.5s 1s forwards ease-out;
-} 
+}
 
-.hero h1,p {
+.hero h1, .hero p {
     position: relative;
     text-align: center;
     color: #494637;
@@ -118,7 +117,7 @@ body {
     width: 500px;
     margin: auto;
     line-height: 1.1;
-} 
+}
 
 .hero p {
     font-size: xx-large;
@@ -131,7 +130,7 @@ body {
 
 .hero span {
     color: #a95a67;
-} 
+}
 
 .btn {
     cursor: pointer;
@@ -313,6 +312,112 @@ header {
     cursor: pointer;
 }
 
+.header-color-bg {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 24px;
+}
+
+.header-color-bg h4, #who h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header-color-bg h1, #who h2 {
+    font-weight: 900;
+    font-size: 38px;
+    color: #d2be67;
+}
+
+.header-color-bg p, #who p {
+    font-size: 21px;
+    margin-top: 10px;
+    color: white;
+}
+
+p {
+    font-size: 21px;
+}
+
+#intro-p {
+    width: 712px;
+    margin: auto;
+    margin-top: 30px;
+    padding-right: 22px;
+}
+
+#who {
+    margin-top: 45px;
+}
+
+#who p, #who h2, #who h4 {
+    color: black;
+    text-align: center;
+}
+
+.header-color-bg p {
+    margin-top: initial;
+    color: #514d47;
+}
+
+#profile-img {
+    background-color: rgb(255 255 255 / 60%);
+    height: 600px;
+    width: 920px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#profile-img img {
+    width: 320px;
+    height: 480px;
+    border-radius: 5px;
+    box-shadow: rgb(81 77 71) 3px 3px 10px;
+}
+
+#profile-img p {
+    width: 470px;
+    text-align: initial;
+    font-size: 19px;
+    margin-top: initial;
+}
+
+#profile-img h2 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: initial;
+}
+
+#hero-2 {
+    height: 710px;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border-color: #d2be67;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+
 @keyframes show-me {
     to {
         opacity: 1;
@@ -345,17 +450,3 @@ header {
         opacity: 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
