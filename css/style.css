@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -128,9 +129,25 @@ body {
     margin-top: 16px;
 }
 
-.hero span {
+#galery span {
     color: #a95a67;
 }
+
+.hero span,#galery #one-span,#two-span {
+    color: #a95a67;
+    position: absolute;
+    right: -16px;
+    bottom: 40px;
+    font-size: 55px;
+}
+
+#galery #two-span {
+    color: rgb(0, 0, 0);
+    right: initial;
+    bottom: initial;
+    left: 18px;
+    top: 42px;
+} 
 
 .btn {
     cursor: pointer;
@@ -231,7 +248,7 @@ body {
     font-weight: 700;
     line-height: 23px;
     outline: none;
-    padding: .75rem;
+    padding: .45rem;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     border-bottom-left-radius: 15px 255px;
@@ -264,7 +281,7 @@ button img {
     position: absolute;
     bottom: 80px;
     left: 0;
-    transform: translateX(-500px);
+    transform: translateY(500px);
     opacity: 0;
     animation: move-in 1.5s forwards ease-out;
 }
@@ -297,7 +314,7 @@ header {
     bottom: 240px;
     left: 3px;
     z-index: 1000;
-    transform: translateX(-500px);
+    transform: translateY(500px);
     opacity: 0;
     animation: move-in 1.5s forwards ease-out;
 }
@@ -415,6 +432,60 @@ hr {
     margin-top: 20px;
 }
 
+#galery h2 {
+    font-weight: 400;
+    font-size: 40px;
+    width: 472px;
+    margin: auto;
+    line-height: 1.2;
+    position: relative;
+}
+
+#galery hr {
+    width: 10%;
+    margin-top: initial;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    position: initial;
+    right: initial;
+    bottom: initial;
+    font-size: 50px;
+} 
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.column2 {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0px 5px;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column2 img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
 
 
 
@@ -446,7 +517,7 @@ hr {
 
 @keyframes move-in {
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
