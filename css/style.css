@@ -107,7 +107,7 @@ body {
 
 .hero h1, .hero p {
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     color: #494637;
 }
 
@@ -115,7 +115,7 @@ body {
     font-weight: 900;
     font-size: 50px;
     padding-top: 20px;
-    width: 500px;
+    width: 800px;
     margin: auto;
     line-height: 1.1;
 }
@@ -124,7 +124,7 @@ body {
     font-size: xx-large;
     font-weight: 500;
     margin-top: 16px;
-    width: 700px;
+    width: 800px;
     margin: auto;
     margin-top: 16px;
 }
@@ -448,12 +448,12 @@ hr {
     margin-bottom: 10px;
 }
 
-.hero span {
+/* .hero span {
     position: initial;
     right: initial;
     bottom: initial;
     font-size: 50px;
-} 
+}  */
 
 .row2 {
     display: flex;
