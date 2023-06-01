@@ -121,8 +121,8 @@ body {
 }
 
 .hero p {
-    font-size: xx-large;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 900;
     margin-top: 16px;
     width: 800px;
     margin: auto;
@@ -342,10 +342,15 @@ header {
     font-weight: 500;
 }
 
-.header-color-bg h1, #who h2 {
+.header-color-bg h1, #who h2, #service h1 {
     font-weight: 900;
     font-size: 38px;
     color: #d2be67;
+}
+
+#service h1 {
+    text-align: center;
+    margin-top: 25px;
 }
 
 .header-color-bg p, #who p {
@@ -479,6 +484,114 @@ hr {
     cursor: pointer;
     opacity: 0.8;
 }
+
+.service-text img {
+    width: 65px;
+}
+
+#positiond {
+    object-position: -2px;
+}
+
+.service-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.service-img {
+    border: 5px double #514d47;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    direction: ltr;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 60px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: black;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: black;
+}
+
+.swiper-pagination {
+    bottom: 40px !important;
+    left: 0 !important;
+    width: 100% !important;
+    float: initial !important;
+    padding: 0px 70px !important;
+    text-align: left !important;
+}
+
+.style-one {
+    height: 420px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 70px;
+    padding-top: 0px;
+    direction: rtl;
+}
+
+.style-one h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.style-one p {
+    font-size: 18px;
+}
+
+.swiper-rtl .swiper-button-prev {
+    right: 0px !important;
+}
+
+.swiper-rtl .swiper-button-next {
+    left: 0px !important;
+}
+
+.swiper-slide {
+    width: 100% !important;
+}
+
+#all-services {
+    display: flex;
+    padding-top: 40px;
+}
+
+.service-text {
+    width: 420px;
+    margin-right: 70px;
+}
+
+
+
+
+
+
 
 
 
