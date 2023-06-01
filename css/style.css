@@ -516,7 +516,6 @@ hr {
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
-    direction: ltr;
 }
 
 .swiper {
@@ -553,7 +552,6 @@ hr {
     text-align: right;
     padding: 70px;
     padding-top: 0px;
-    direction: rtl;
 }
 
 .style-one h2 {
