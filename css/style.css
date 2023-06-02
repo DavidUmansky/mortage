@@ -494,8 +494,8 @@ hr {
 }
 
 .service-text h2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 900;   
     margin-bottom: 5px;
 }
 
@@ -536,7 +536,7 @@ hr {
 }
 
 .swiper-pagination {
-    bottom: 40px !important;
+    bottom: 35px !important;
     left: 0 !important;
     width: 100% !important;
     float: initial !important;
@@ -561,6 +561,7 @@ hr {
 
 .style-one p {
     font-size: 18px;
+    width: 490px;
 }
 
 .swiper-rtl .swiper-button-prev {
@@ -581,15 +582,22 @@ hr {
 }
 
 .service-text {
-    width: 420px;
-    margin-right: 70px;
+    width: 550px;
+    margin-right: 80px;
 }
 
+.swiper {
+    width: 88.7% !important;
+    margin-left: 20px !important;
+}
 
+#underline {
+    text-decoration: underline;
+}
 
-
-
-
+.service-all2 {
+    display: flex;
+}
 
 
 
