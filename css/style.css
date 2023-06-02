@@ -486,7 +486,7 @@ hr {
 }
 
 .service-text img {
-    width: 65px;
+    width: 45px;
 }
 
 #positiond {
@@ -501,8 +501,8 @@ hr {
 
 .service-img {
     border: 5px double #514d47;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,7 +548,7 @@ hr {
     height: 420px;
     width: 100%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: right;
     padding: 70px;
     padding-top: 0px;
@@ -557,6 +557,7 @@ hr {
 .style-one h2 {
     font-size: 28px;
     font-weight: 400;
+    margin-bottom: 11px;
 }
 
 .style-one p {
