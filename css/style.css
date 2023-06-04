@@ -351,6 +351,7 @@ header {
 #service h1 {
     text-align: center;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .header-color-bg p, #who p {
@@ -577,14 +578,28 @@ hr {
     width: 100% !important;
 }
 
-#all-services {
+.all-services {
     display: flex;
+    background: linear-gradient(to right, white 53%, #fffbfb 47%);
+}
+
+#all-services-first {
     padding-top: 40px;
+}
+
+.service-gap {
+    padding-top: 150px;
 }
 
 .service-text {
     width: 550px;
-    margin-right: 80px;
+    margin-right: 65px;
+    border-right: 3px solid black;
+    padding-right: 10px;
+}
+
+.small-service {
+    height: 305px;
 }
 
 .swiper {
@@ -600,9 +615,17 @@ hr {
     display: flex;
 }
 
+#small-p {
+    width: 475px;
+}
 
+#small-p2 {
+    width: 480px;
+}
 
-
+#small-service2 {
+    height: 360px;
+}
 
 
 
