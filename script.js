@@ -28,6 +28,10 @@ let midleA = document.querySelector("#midle-a");
 let lastA = document.querySelector("#last-a");
 let allElements = document.getElementsByClassName('all-services');
 
+if (firstA.classList.contains('current2')) {
+    allElements[0].classList.add('active');
+}
+
 firstA.addEventListener("click", function (event) {
     event.preventDefault();
     if (firstA.classList.contains('current2')) {
@@ -92,17 +96,7 @@ lastA.addEventListener("click", function (event) {
     }
 });
 
-if (firstA.classList.contains('current2')) {
-    allElements[0].classList.add('active');
-}
 
-if (midleA.classList.contains('current2')) {
-    allElements[1].classList.add('active');
-}
-
-if (lastA.classList.contains('current2')) {
-    allElements[2].classList.add('active');
-}
 
 
 

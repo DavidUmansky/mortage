@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -87,6 +88,11 @@ body {
     position: relative;
 }
 
+.hero {
+    height: 60vh;
+    position: relative;
+}
+
 .hero::before, #hero-2::before {
     content: '';
     position: absolute;
@@ -103,37 +109,44 @@ body {
     transform: translateX(500px);
     opacity: 0;
     animation: move-in 1.5s 1s forwards ease-out;
+    width: 285px;
 }
 
 .hero h1, .hero p {
     position: relative;
     /* text-align: center; */
-    color: #494637;
+    color: black;
 }
 
 .hero h1 {
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 20px;
-    width: 800px;
+    width: 632px;
     margin: auto;
     line-height: 1.1;
 }
 
 .hero p {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 900;
     margin-top: 16px;
-    width: 800px;
-    margin: auto;
     margin-top: 16px;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    width: 632px;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 #galery span {
     color: #a95a67;
 }
 
-.hero span,#galery #one-span,#two-span {
+#galery #one-span,#two-span {
     color: #a95a67;
     position: absolute;
     right: -16px;
@@ -458,12 +471,10 @@ hr {
     margin-bottom: 10px;
 }
 
-/* .hero span {
-    position: initial;
-    right: initial;
-    bottom: initial;
-    font-size: 50px;
-}  */
+.hero span {
+    position: absolute;
+    right: -55px;
+} 
 
 .row2 {
     display: flex;
