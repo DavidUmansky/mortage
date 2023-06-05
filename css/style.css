@@ -89,8 +89,7 @@ body {
 }
 
 .hero {
-    height: 60vh;
-    position: relative;
+    height: 56vh;
 }
 
 .hero::before, #hero-2::before {
@@ -140,6 +139,9 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
+    transform: translateY(500px);
+    opacity: 0;
+    animation: move 1.5s forwards ease-out;
 }
 
 #galery span {
@@ -693,8 +695,33 @@ hr {
     display: flex;
 }
 
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
 
+footer div {
+    display: flex;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    transform: translateX(500px);
+    opacity: 0;
+    animation: move-in 1.5s 1s forwards ease-out;
+}
 
+footer img {
+    width: 135px;
+}
+
+footer p {
+    position: absolute;
+    bottom: 20px;
+    right: 147px;
+    width: 505px;
+    font-size: 32px;
+}
 
 @keyframes show-me {
     to {
