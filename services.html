@@ -66,12 +66,15 @@
 
     <main>
         <section style="padding-bottom: 500px;" id="service">
-            <h1>השירותים שלי</h1>
-            <div>
-                
-            </div>
-            <div class="all-services" id="all-services-first">
+            <!-- <h1 style="visibility: hidden;background: linear-gradient(to right, rgb(180, 180, 180) 53%, #dac4c4 47%);">השירותים שלי</h1> -->
 
+            <ul>
+                <li><a id="first-a" class="current2" href="#">משכנתא לדירה ראשונה</a></li>
+                <li><a id="midle-a" href="#">איחוד הלוואות</a></li>
+                <li><a id="last-a" href="#">משכנתא הפוכה</a></li>
+            </ul>
+
+            <div class="all-services hide">
                 <div class="service-text small-service">
                     <div class="service-img">
                         <img id="positiond" src="img/new-house.png" alt="">
@@ -87,11 +90,8 @@
                 </div>
 
                 <div class="container">
-                    <!-- Slider main container -->
                     <div class="swiper">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="style-one">
                                     <img src="img/budget.png" alt="">
@@ -165,17 +165,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="all-services">
+            <div class="all-services hide">
                 <div class="service-text">
                     <div class="service-img">
                         <img src="img/shekel.png" alt="">
@@ -195,11 +193,8 @@
                 </div>
 
                 <div class="container">
-                    <!-- Slider main container -->
                     <div class="swiper">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="style-one">
                                     <img src="img/search.png" alt="">
@@ -221,17 +216,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
                         <div style="display: none;" class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
                         <div style="display: none;" class="swiper-button-prev"></div>
                         <div style="display: none;" class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="all-services service-gap">
+            <div class="all-services hide">
                 <div id="small-service2" class="service-text">
                     <div class="service-img">
                         <img src="img/upside-down.png" alt="">
@@ -247,13 +240,10 @@
                 </div>
 
                 <div class="container">
-                    <!-- Slider main container -->
                     <div
                         class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-backface-hidden">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper" id="swiper-wrapper-a5d278e2c68bf99c" aria-live="polite"
                             style="transform: translate3d(0px, 0px, 0px);">
-                            <!-- Slides -->
                             <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 1"
                                 style="width: 626px;">
                                 <div class="style-one">
@@ -276,14 +266,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
                         <div style="display: none;"
                             class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
                             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
                                 role="button" aria-label="Go to slide 1" aria-current="true"></span>
                         </div>
 
-                        <!-- If we need navigation buttons -->
                         <div style="display: none;" class="swiper-button-prev swiper-button-disabled swiper-button-lock"
                             tabindex="-1" role="button" aria-label="Previous slide"
                             aria-controls="swiper-wrapper-a5d278e2c68bf99c" aria-disabled="true"></div>
@@ -320,7 +308,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/lightbox.min.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 

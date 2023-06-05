@@ -342,6 +342,10 @@ header {
     font-weight: 500;
 }
 
+#service {
+    position: relative;
+}
+
 .header-color-bg h1, #who h2, #service h1 {
     font-weight: 900;
     font-size: 38px;
@@ -580,15 +584,9 @@ hr {
 
 .all-services {
     display: flex;
-    background: linear-gradient(to right, white 53%, #fffbfb 47%);
-}
-
-#all-services-first {
-    padding-top: 40px;
-}
-
-.service-gap {
-    padding-top: 150px;
+    /* background: linear-gradient(to right, rgb(231 215 147) 53%, #e0e0e0 47%); */
+    /* margin-top: 100px; */
+    padding-top: 120px;
 }
 
 .service-text {
@@ -627,7 +625,62 @@ hr {
     height: 360px;
 }
 
+#service ul {
+    list-style: none;
+    height: 63.33px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
+#service ul li a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+#service ul li {
+    float: left;
+}
+
+#service ul li a {
+    background-color: #514d47;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 20;
+    position: relative;
+    transition: 0.5s;
+}
+
+#service ul li a.current2,#service ul li a:hover {
+    background-color: #444;
+    color: #f7c08a;
+}
+
+#first-a {
+    border-radius: 0px 8px 8px 0px;
+}
+
+#last-a {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.hide {
+    opacity: 0;
+    display: none;
+}
+
+.active {
+    opacity: 1;
+    display: flex;
+}
 
 
 
