@@ -90,6 +90,8 @@ body {
 
 .hero {
     height: 56vh;
+    background: url(../img/house.jpg) no-repeat center center/cover;
+    position: relative;
 }
 
 .hero::before, #hero-2::before {
@@ -99,7 +101,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(235 232 221 / 80%);
+    background: rgb(235 232 221 / 0%);
 }
 
 .hero #slide-photo {
@@ -120,28 +122,17 @@ body {
 .hero h1 {
     font-weight: 900;
     font-size: 40px;
-    padding-top: 20px;
-    width: 632px;
-    margin: auto;
+    width: 740px;
     line-height: 1.1;
+    color: white;
 }
 
 .hero p {
-    font-size: 32px;
-    font-weight: 900;
-    margin-top: 16px;
-    margin-top: 16px;
+    font-size: 30px;
+    font-weight: 600;
     font-family: 'Noto Sans Hebrew', sans-serif;
-    width: 632px;
-    position: absolute;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    transform: translateY(500px);
-    opacity: 0;
-    animation: move 1.5s forwards ease-out;
+    width: 740px;
+    color: white;
 }
 
 #galery span {
@@ -189,6 +180,20 @@ body {
     transform: translateY(500px);
     opacity: 0;
     animation: move 1.5s forwards ease-out;
+    background: rgb(0 0 0 / 65%);
+    width: 780px;
+    height: 190px;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #overlay {
@@ -472,11 +477,6 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.hero span {
-    position: absolute;
-    right: -55px;
-} 
 
 .row2 {
     display: flex;
