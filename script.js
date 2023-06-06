@@ -68,7 +68,7 @@ midleA.addEventListener("click", function (event) {
             if (lastA.classList.contains('current2')) {
                 lastA.classList.remove('current2');
                 midleA.classList.add('current2');
-                allElements[0].classList.remove('active');
+                allElements[2].classList.remove('active');
                 allElements[1].classList.add('active');
             }
         }
