@@ -104,6 +104,11 @@ body {
     background: rgb(235 232 221 / 0%);
 }
 
+#hero-2::before {
+    background: rgb(235 232 221 / 80%) !important;
+}
+
+
 .hero #slide-photo {
     position: absolute;
     bottom: 0;
@@ -139,7 +144,7 @@ body {
     color: #a95a67;
 }
 
-#galery #one-span,#two-span {
+#galery #one-span, #two-span {
     color: #a95a67;
     position: absolute;
     right: -16px;
@@ -153,7 +158,7 @@ body {
     bottom: initial;
     left: 18px;
     top: 42px;
-} 
+}
 
 .btn {
     cursor: pointer;
@@ -395,9 +400,9 @@ p {
     padding-right: 22px;
 }
 
-#who {
+/* #who {
     margin-top: 45px;
-}
+} */
 
 #who p, #who h2, #who h4 {
     color: black;
@@ -411,8 +416,8 @@ p {
 
 #profile-img {
     background-color: rgb(255 255 255 / 60%);
-    height: 600px;
-    width: 920px;
+    height: 650px;
+    width: 970px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -428,8 +433,8 @@ p {
 }
 
 #profile-img img {
-    width: 320px;
-    height: 480px;
+    width: 380px;
+    height: 570px;
     border-radius: 5px;
     box-shadow: rgb(81 77 71) 3px 3px 10px;
 }
@@ -513,7 +518,7 @@ hr {
 
 .service-text h2 {
     font-size: 30px;
-    font-weight: 900;   
+    font-weight: 900;
     margin-bottom: 5px;
 }
 
@@ -672,7 +677,7 @@ hr {
     transition: 0.5s;
 }
 
-#service ul li a.current2,#service ul li a:hover {
+#service ul li a.current2, #service ul li a:hover {
     background-color: #444;
     color: #f7c08a;
 }
