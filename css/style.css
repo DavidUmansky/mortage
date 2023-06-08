@@ -741,9 +741,11 @@ footer p {
     position: relative;
 }
 
-#ser-img {
+#ser-img,#ser-img2 {
     width: 387px;
+    vertical-align: bottom;
 }
+
 
 #ser-img-father h1 {
     position: absolute;
@@ -772,10 +774,29 @@ footer p {
     margin: auto !important;
 }
 
-.des-p:last-child {
+#des-p:last-child {
     font-weight: bold;
     margin-top: 50px !important;
 }
+
+.des-p2 {
+    font-weight: initial !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes show-me {
     to {
