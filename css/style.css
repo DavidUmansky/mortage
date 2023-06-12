@@ -210,7 +210,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(0 0 0 / 75%);
+    background-color: rgb(0 0 0 / 88%);
     z-index: 1000;
 }
 
@@ -234,6 +234,7 @@ body {
 #text h2 {
     text-align: center;
     width: initial;
+    color: #d2be67;
 }
 
 #text p {
@@ -246,7 +247,7 @@ body {
 
 .callback-form {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 12px;
 }
 
 .callback-form .form-control {
@@ -321,7 +322,7 @@ textarea {
 #send {
     width: 80%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
 }
 
@@ -336,6 +337,8 @@ button[type="submit"] {
     animation-fill-mode: initial;
     animation-direction: initial;
     animation-timing-function: initial;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 button img {
@@ -424,12 +427,6 @@ header {
     color: #d2be67;
 }
 
-/* #service h1 {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 30px;
-} */
-
 .header-color-bg p, #who p {
     font-size: 21px;
     margin-top: 10px;
@@ -446,10 +443,6 @@ p {
     margin-top: 30px;
     padding-right: 22px;
 }
-
-/* #who {
-    margin-top: 45px;
-} */
 
 #who p, #who h2, #who h4 {
     color: black;
@@ -648,12 +641,7 @@ hr {
 }
 
 .all-services {
-    /* display: flex; */
-    /* background: linear-gradient(to right, rgb(231 215 147) 53%, #e0e0e0 47%); */
-    /* margin-top: 100px; */
     padding-top: 120px;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .service-text {

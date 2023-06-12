@@ -1,23 +1,34 @@
-const first = document.querySelector('#details');
-const iconics = document.querySelector('#iconics');
+if (document.querySelector('#first') !== null) {
+    const first = document.querySelector('#details');
+    const iconics = document.querySelector('#iconics');
 
-setTimeout(() => {
-    on()
-}, "9000");
+    setTimeout(() => {
+        on()
+    }, "9000");
+
+    document.getElementById("close-button").addEventListener("click", off);
+} else {
+    setTimeout(() => {
+        on()
+    }, "9000");
+    document.getElementById("close-button").addEventListener("click", off);
+}
 
 function on() {
     document.getElementById("overlay").style.display = "block";
-    first.style.display = 'none';
-    iconics.style.display = 'none';
+    if (document.querySelector('#first') !== null) {
+        first.style.display = 'none';
+        iconics.style.display = 'none';
+    }
 }
 
 function off() {
     document.getElementById("overlay").style.display = "none";
-    first.style.display = 'block';
-    iconics.style.display = 'block';
+    if (document.querySelector('#first') !== null) {
+        first.style.display = 'block';
+        iconics.style.display = 'block';
+    }
 }
-
-document.getElementById("close-button").addEventListener("click", off);
 
 if (document.querySelector('#first-a') !== null) {
     let firstA = document.querySelector('#first-a');
