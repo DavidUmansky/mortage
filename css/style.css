@@ -124,7 +124,7 @@ body {
     color: black;
 }
 
-.hero h1 {
+.hero h1, #ban-title {
     font-weight: 900;
     font-size: 40px;
     width: 740px;
@@ -132,7 +132,7 @@ body {
     color: white;
 }
 
-.hero p {
+.hero p, #text p {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Noto Sans Hebrew', sans-serif;
@@ -211,7 +211,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgb(0 0 0 / 75%);
-    z-index: 2;
+    z-index: 1000;
 }
 
 #text {
@@ -222,36 +222,63 @@ body {
     color: white;
     transform: translateY(500px);
     -ms-transform: translate(-50%, -50%);
-    width: 525px;
-    height: 465px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #d2be67;
+    width: 820px;
+    height: 90%;
+    background-color: rgb(81 77 71);
     border-radius: 4px;
     opacity: 0;
     animation: show-me 1.5s forwards ease-out;
+    padding-top: 25px;
 }
 
-#text #yehuda-img-ban {
-    position: absolute;
-    width: 525px;
-    bottom: 0px;
-    border-top: 2px solid black;
-    border-radius: 0px 0px 4px 4px;
+#text h2 {
+    text-align: center;
+    width: initial;
 }
 
-#text #banner {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    height: 107px;
+#text p {
+    width: 580px;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+}
+
+.callback-form {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.callback-form .form-control {
+    height: 55px;
     display: flex;
     align-items: center;
-    font-size: 32px;
-    font-weight: 600;
 }
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.callback-form input,textarea {
+    width: 80%;
+    margin: auto;
+    padding: 4px;
+    height: 40px;
+    border: #110000 1px solid;
+    font-size: 19px;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+.callback-form input:focus,textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 95px;
+    margin-top: 5px;
+}
+
 
 .button-55 {
     align-self: center;
@@ -289,6 +316,26 @@ body {
     animation-fill-mode: forwards;
     animation-direction: alternate;
     animation-timing-function: ease;
+}
+
+#send {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+}
+
+button[type="submit"] {
+    margin-left: 20px;
+}
+
+.delete-some {
+    position: initial; 
+    z-index: initial;
+    animation: initial;
+    animation-fill-mode: initial;
+    animation-direction: initial;
+    animation-timing-function: initial;
 }
 
 button img {
@@ -741,7 +788,7 @@ footer p {
     position: relative;
 }
 
-#ser-img,#ser-img2 {
+#ser-img, #ser-img2 {
     width: 387px;
     vertical-align: bottom;
 }
@@ -759,7 +806,7 @@ footer p {
 #service p {
     width: 450px;
     margin-right: 30px;
-} 
+}
 
 #service h2 {
     width: 867px;

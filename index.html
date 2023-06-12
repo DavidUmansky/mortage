@@ -71,17 +71,39 @@
             <button id="details" class="button-55 call-free" role="button"><img src="img/notepad.png" alt="">השארת
                 פרטים</button>
         </a>
-        <!-- <a href="https://wa.me/+972528089417?text=היי+יהודה,+ אשמח+שתחזור+אלי">
-            <button id="second" class="button-55 call-free" role="button"><img src="img/text-message.png" alt="">ייעוץ
-                ללא עלות</button>
-        </a> -->
+
         <div id="overlay">
             <div id="text">
                 <img id="close-button" src="img/failed.png" alt="">
-                <div id="banner">שיחת ייעוץ ללא עלות</div>
-                <a id="call-me" href="tel:0528089417"><button class="button-55" role="button"><img
-                            src="img/telephone.png" alt="">0528089417</button></a>
-                <img id="yehuda-img-ban" src="img/306159472_104538199078960_4718250514849944119_n.jpg" alt="">
+                <h2 id="ban-title">השארת פרטים לחזרה</h2>
+                <p>השאירו פרטים ופנייה ואחזור אליכם בהקדם. ניתן לקבל ייעוץ ראשוני טלפוני ולקבוע פגישה ללא תשלום.</p>
+                <form action="#" method="POST" class="callback-form">
+                    <div class="form-control">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="שם פרטי ומשפחה" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="כתובת מייל">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone"></label>
+                        <input type="phone" name="phone" id="phone" placeholder="מספר טלפון" required>
+                    </div>
+                    <div style="height: initial;" class="form-control">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="תוכן הודעה" required></textarea>
+                    </div>
+                    <!-- <input type="submit" value="Send" id="submit" class="btn"> -->
+                    <div id="send">
+                        <button type="submit" id="details" class="button-55 delete-some" role="button" style="display: block;"><img src="img/notepad.png" alt="">
+                            סיום ושליחה
+                        </button>
+                        <button class="button-55 delete-some" role="button" style="display: block;"><img src="img/call.png" alt="">
+                            0528089417
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -110,7 +132,7 @@
 
 
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -64,60 +64,40 @@
     </header>
 
     <main>
-        <!-- <div id="iconics">
-            <a href="https://www.facebook.com/profile.php?id=100085683403251" target="_blank"><img
-                    src="img/facebook (1).png" alt=""></a>
-            <a href="https://wa.me/+972528089417?text=היי+יהודה,+ אשמח+שתחזור+אלי"><img src="img/text-message.png"
-                    alt=""></a>
-            <a href="mailto: Uditangi@gmail.com"><img src="img/message.png" alt=""></a>
-        </div> -->
-
-        <!-- <a href="#">
-            <button id="details" class="button-55 call-free" role="button"><img src="img/notepad.png" alt="">השארת
-                פרטים</button>
-        </a>
-        <a href="https://wa.me/+972528089417?text=היי+יהודה,+ אשמח+שתחזור+אלי">
-            <button id="second" class="button-55 call-free" role="button"><img src="img/text-message.png" alt="">ייעוץ
-                ללא עלות</button>
-        </a> -->
         <div id="overlay">
             <div id="text">
                 <img id="close-button" src="img/failed.png" alt="">
-                <div id="banner">שיחת ייעוץ ללא עלות</div>
-                <a id="call-me" href="tel:0528089417"><button class="button-55" role="button"><img
-                            src="img/telephone.png" alt="">0528089417</button></a>
-                <img id="yehuda-img-ban" src="img/306159472_104538199078960_4718250514849944119_n.jpg" alt="">
+                <h2 id="ban-title">השארת פרטים לחזרה</h2>
+                <p>השאירו פרטים ופנייה ואחזור אליכם בהקדם. ניתן לקבל ייעוץ ראשוני טלפוני ולקבוע פגישה ללא תשלום.</p>
+                <form action="#" method="POST" class="callback-form">
+                    <div class="form-control">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="שם פרטי ומשפחה" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="כתובת מייל">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone"></label>
+                        <input type="phone" name="phone" id="phone" placeholder="מספר טלפון" required>
+                    </div>
+                    <div style="height: initial;" class="form-control">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="תוכן הודעה" required></textarea>
+                    </div>
+                    <!-- <input type="submit" value="Send" id="submit" class="btn"> -->
+                    <div id="send">
+                        <button type="submit" class="button-55 delete-some" role="button" style="display: block;"><img src="img/notepad.png" alt="">
+                            סיום ושליחה
+                        </button>
+                        <button class="button-55 delete-some" role="button" style="display: block;"><img src="img/call.png" alt="">
+                            0528089417
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- <section id="intro-info">
-            <header>
-                <div id="header-color-bg-father">
-                    <div class="header-color-bg">
-                        <h1>ייעוץ משכנתאות</h1>
-                        <p>המטרה שלי לדאוג לשקט הכלכלי והנפשי שלכם ולסייע בהחלטות</p>
-                    </div>
-                </div>
-            </header>
-
-            <hr>
-
-            <p id="intro-p">לפני שנים רבות זיהינו את הפער בין הבנק ללקוח וזיהינו את הצורך בשירות שיגשר על הפער הזה ,על
-                מנת לייצר
-                ללקוח תנאים הוגנים שמותאמים לצרכיו בתחום כה מורכב ובעסקה כה גדולה ולצד זה גם הורדנו מהלקוח את נטל
-                ההתעסקות וההתנהלות מול המערכת הבנקאית וחסכנו לו זמן וכאב ראש. <br><br>
-
-                אנו מקפידים על כלי עבודה מקצועיים
-                והמתקדמים ביותר הקיימים היום בשוק, על איכות היועצים שלנו, ועל שירות ברמה גבוהה ובמחירים הוגנים.
-                אנחנו נלווה אותך אישית למציאת פתרון מימון מותאם, בין אם מדובר על משכנתא לדירה ראשונה, שנייה, השקעה,
-                איחוד הלוואות, מסורבים, ואף משכנתא הפוכה - אנחנו נתאים לך את הפתרון המדוייק!
-                <br><br>
-
-                מינימום התעסקות מבחינתך (רק פעולות טכניות נלוות למשכנתא – כמו חתימה פיזית שלך בבנק, התנהלות מול שמאי,
-                עורך דין וכדומה). כל מה שקשור לאישור המשכנתא עצמה, אנחנו מבצעים עבורך / עובדים מולך כשאתה בשיא הנוחות
-                בבית על הספה או במשרד.
-
-            </p>
-        </section> -->
 
         <section id="who" style="margin-bottom: 40px;">
             <div id="hero-2">
@@ -219,7 +199,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/lightbox.min.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

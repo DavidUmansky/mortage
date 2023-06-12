@@ -65,9 +65,41 @@
     </header>
 
     <main>
-        <section style="padding-bottom: 500px;" id="service">
-            <!-- <h1 style="visibility: hidden;background: linear-gradient(to right, rgb(180, 180, 180) 53%, #dac4c4 47%);">השירותים שלי</h1> -->
+        <div id="overlay">
+            <div id="text">
+                <img id="close-button" src="img/failed.png" alt="">
+                <h2 id="ban-title">השארת פרטים לחזרה</h2>
+                <p>השאירו פרטים ופנייה ואחזור אליכם בהקדם. ניתן לקבל ייעוץ ראשוני טלפוני ולקבוע פגישה ללא תשלום.</p>
+                <form action="#" method="POST" class="callback-form">
+                    <div class="form-control">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="שם פרטי ומשפחה" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="כתובת מייל">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone"></label>
+                        <input type="phone" name="phone" id="phone" placeholder="מספר טלפון" required>
+                    </div>
+                    <div style="height: initial;" class="form-control">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="תוכן הודעה" required></textarea>
+                    </div>
+                    <div id="send">
+                        <button type="submit" class="button-55 delete-some" role="button" style="display: block;"><img src="img/notepad.png" alt="">
+                            סיום ושליחה
+                        </button>
+                        <button class="button-55 delete-some" role="button" style="display: block;"><img src="img/call.png" alt="">
+                            0528089417
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
+        <section style="padding-bottom: 500px;" id="service">
             <ul>
                 <li><a id="first-a" class="current2" href="#">משכנתא לדירה ראשונה</a></li>
                 <li><a id="midle-a" href="#">איחוד הלוואות</a></li>
@@ -75,103 +107,6 @@
             </ul>
 
             <div class="all-services hide">
-                <!-- <div class="service-text small-service">
-                    <div class="service-img">
-                        <img id="positiond" src="img/new-house.png" alt="">
-                    </div>
-                    <h2>משכנתא לדירה ראשונה</h2>
-                    <p id="small-p">החלטתם להגשים את החלום? מצאתם את הדירה שחלמתם עליה?
-                        מזל טוב!!! <br>
-                        אני יהודה טנג'י יועץ משכנתאות ואני פה בכדי להגשים לכם יחד אתכם את החלום.
-                        לכל חלום יש את <span id="underline">השלבים שלו</span> וישנה חשיבות גדולה להתקדם <span
-                            id="underline">באחריות ובזהירות</span> על מנת למנוע תקלות ומשברים
-                        בדרך.
-                    </p>
-                </div>
-
-                <div class="container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="style-one">
-                                    <img src="img/budget.png" alt="">
-                                    <h2>תכנון</h2>
-                                    <p>
-                                        בשלב הזה נשב יחד אל מול הנתונים ונבדוק את ההון העצמי שלכם, ההכנסות וההתחיבויות
-                                        העכשוויות והעתידיות שלכם על מנת להתאים לכם את העסקה המתאימה שלכם בכדי שתוכלו
-                                        להמשיך
-                                        לנהל את משק הבית בהווה ובעתיד בצורה אחראית.
-                                        בסוף שלב התכנון נקבע יעד תקציבי שמתאים לכם ונתאים אותו לגובה העיסקה הצפויה.
-                                        שלב התכנון הוא שלב חשוב ומכריע שמשמש לנו כמצפן לעסקה שאנו נכנסים אלייה.
-                                        תפקידי לכוון אתכם בצורה אחראית ושקולה על סמך ניסיוני העשיר על מנת שהעסקה תצלח
-                                        ותשיגו
-                                        את הכי טוב בשבילכם.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="style-one">
-                                    <img src="img/folder.png" alt="">
-                                    <h2>פתיחת תיק ואיסוף מסמכים</h2>
-                                    <p>
-                                        לאחר שהחלטנו על היעדים שלנו נתחיל בתהליך פתיחת התיק להלוואת המשכנתא, נאסוף את
-                                        המסמכים ונגיש את הבקשות.
-                                        שנות הניסיון שלי וההכרות עם בנקים ובנקאים מאפשרות לי להגיש את התיק למכרז מסודר
-                                        מול
-                                        הבנקים ולדרוש מהם את התנאים הטובים ביותר עבורכם ובשבילכם.
-                                        לכל תיק ועסקה יש את המאפיינים שלה ותפקידי לספר את הסיפור שלכם בצורה כזאת שהצד
-                                        השני
-                                        יתן לכם את התנאים הטובים ביותר.
-                                        בסיום השלב הזה אני ידאג לכם לאישור עקרוני של הבנקים להלוואת המשכנתא.
-                                        האישור הזה נותן לנו את האפשרות להתקדם עוד צעד בדרך לחלום שלכם.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="style-one">
-                                    <img src="img/star.png" alt="">
-                                    <h2>הופכים את החלום למציאות</h2>
-                                    <p>
-                                        לאחר שיש לנו אישור עקרוני נותר לנו למצוא את הדירה שמתאימה לנו,יש הבדל בסוגי
-                                        העסקאות
-                                        בין אם זה רכישה מקבלן או רכישה במסגרת מחיר למשתכן או לחילופין דירה מיד שניה.
-                                        אבל לא לדאוג אני כאן בכדי לכוון אתכם ולתת לכם את הטיפים הטובים ביותר על מנת
-                                        לחסוך
-                                        לכם כסף והוצאות מיותרות.
-                                        בשלב זה יצטרפו אלינו בעלי מקצוע אחרים: עו"ד,שמאי ולעיתים גם מתווך בעסקאות יד
-                                        שניה,לכל אחד יש את התפקיד שלו ואת האחריות שלו.
-                                        בשלב זה בהנחה והסכמתם על דירת החלומות שלכם נתקדם בזהירות ובאחריות אל חוזה ופה
-                                        אני
-                                        אייעץ לכם על תכנון מוקפד של לוח תשלומים על מנת לחשוף אתכם כמה שפחות לסיכונים
-                                        ולהוצאות מיותרות כמו עליות מדד ברכישה מקבלן.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="style-one">
-                                    <img src="img/contract.png" alt="">
-                                    <h2>חתימה על המשכנתא</h2>
-                                    <p>
-                                        אחרי שחתמתם על החוזה וקיים לוח תשלומים מסודר נקבע מועד בהתבסס על כל הנתונים
-                                        לחתימה
-                                        על המשכנתא.
-                                        אני כמובן יהיה אתכם במעמד המרגש הזה ויהיה הראשון לברך אתכם על הגשמת חלום לכם
-                                        ולמשפחה
-                                        שלכם.
-                                        בשלב הזה נציג לבנק את כל המסמכים והביטחונות שהוא ידרוש על מנת לסיים את התהליך
-                                        וגם פה
-                                        אני יהיה אתכם בכדי לכוון להסביר ולייעץ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div> -->
-                <!-- Change style -->
                 <div class="flex-div">
                     <div id="ser-img-father">
                         <img id="ser-img" src="img/first-ap.jpg" alt="">
@@ -239,54 +174,6 @@
             </div>
 
             <div class="all-services hide">
-                <!-- <div class="service-text">
-                    <div class="service-img">
-                        <img src="img/shekel.png" alt="">
-                    </div>
-                    <h2>איחוד הלוואות</h2>
-                    <p id="small-p2">
-                        במצב של סביבת ריביות עולה משקי הבית נכנסים לסחרור כלכלי אשר בא לידי ביטוי בחיי היום-יום של
-                        המשפחה כולה.
-                        לצערנו עליות הריבית ויוקר המחייה מייצר מצב של משקי בית אשר נאלצים לקחת הלוואות על מנת לייצר
-                        לעצמם פתרונות זמניים של כביכול יציאה מהסחרור.
-                        הלוואות אלו מצטרפות להוצאות נוספות שקיימות וכולן ביחד הופכות להיות בעיות כלכליות שמשפיעות על
-                        צמצום בתזרים וגורמות לסחרור להתעצם ולפגוע בניהול משק הבית.
-                        איחוד הלוואות הקטנות שמאופיינות בהחזר חודשי גבוה להלוואה אחת שהינה חלק מהמשכנתא הקיימת הופך את
-                        ההלוואה החדשה להלוואה ארוכה יותר וכפועל יוצא ההחזר החודשי הופך להיות קטן יותר ובהתנהלות נכונה
-                        יאפשר חזרה לניהול תקין של משק הבית.
-                    </p>
-                </div>
-
-                <div class="container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="style-one">
-                                    <img src="img/search.png" alt="">
-                                    <h2>בדיקה</h2>
-                                    <p>
-                                        בתהליך של איחוד ההלוואות נעבור יחד בדיקה מסודרת של ההתנהלות הכלכלית של משק הבית
-                                        ניתן דגשים להתנהלות בריאה יותר על מנת לא להגיע למצב כזה בעתיד.
-                                        תהליך איחוד ההלוואה נבחן תחת קריטריונים של שעבוד נכס קיים בהתאם לאחוז המימון
-                                        האפשרי ויכולת ההחזר של ההלוואה.
-                                        היתרון בהלוואה החדשה יבוא לידי ביטוי בפריסת תשלומים רחבה יותר לאורך מספר שנים
-                                        גדול יותר ובריביות טובות יותר מאשר הלוואה רגילה.
-                                        בהזדמנות זו תבחן האפשרות למחזר את המשכנתא הקיימת לתנאים טובים יותר במידה ויהיה
-                                        אפשרי.
-                                        התהליך הינו תהליך אחראי ואינו מהווה פתרון זמני אלא פתרון כולל אשר הינו חלק
-                                        משינוי ההתנהלות הכללית.
-                                        בתהליך עצמו ייתכן ויתגלו עלויות מיותרות, תשלומים כפולים שתפקידי למנוע ולהאיר את
-                                        תשומת הלב של המשפחה על מנת לייצר תזרים כלכלי טוב יותר למשק הבית.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="display: none;" class="swiper-pagination"></div>
-
-                        <div style="display: none;" class="swiper-button-prev"></div>
-                        <div style="display: none;" class="swiper-button-next"></div>
-                    </div>
-                </div> -->
                 <div class="flex-div">
                     <div id="ser-img-father">
                         <img id="ser-img2" src="img/unite.jpg" alt="">
