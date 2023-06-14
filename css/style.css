@@ -214,7 +214,7 @@ body {
     z-index: 1000;
 }
 
-#text {
+#text,#text2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -231,11 +231,47 @@ body {
     padding-top: 25px;
 }
 
+#text2 {
+    background-color: rgb(113 113 113);
+    text-align: center;
+}
+
+#text2 div {
+    position: relative;
+}
+
+#text2 div .button-55 {
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 230px;
+}
+
+#text2 h2 {
+    color: #d2be67;
+    width: initial;
+}
+
+#text2 p {
+    font-size: 35px;
+}
+
+#text2 img {
+    margin-top: 1%;
+}
+
+
+
+
 #text h2 {
     text-align: center;
     width: initial;
     color: #d2be67;
 }
+
+
 
 #text p {
     width: 580px;
@@ -340,12 +376,6 @@ button[type="submit"] {
     animation-timing-function: initial;
     font-size: 22px;
     font-weight: 400;
-}
-
-button img {
-    width: 25px;
-    vertical-align: bottom;
-    margin-left: 7px;
 }
 
 #call-me {
@@ -819,16 +849,51 @@ footer p {
     font-weight: initial !important;
 }
 
+.flex-columns .row3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
 
+.flex-columns .column .column-1, .flex-columns .column .column-2 {
+    height: 100%;
+}
 
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+button img {
+    width: 25px !important;
+    vertical-align: bottom !important;
+    margin-left: 7px !important;
+}
 
+.row3 h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    color: #514d47;
+}
 
+.row3  input, .row3 textarea {
+    border-style: none none solid none;
+    border-color: cadetblue;
+}
 
-
-
-
+.row3 .column-2 {
+    margin-top: 30px;
+}
 
 
 

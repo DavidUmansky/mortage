@@ -1,3 +1,29 @@
+<?php
+        $message_sent = false;
+
+        if (isset($_POST['phone']) && $_POST['phone'] != '') {
+            if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                $userName = $_POST['name'];
+                $userEmail = $_POST['email'];
+                $userPhone = $_POST['phone'];
+                $message = $_POST['message'];
+                $messageSubject = "new-client";
+        
+                $to = "davidum77@yahoo.com";
+                $body = "";
+        
+                $body .= "From: " . $userName . "\r\n";
+                $body .= "Phone: " . $userPhone . "\r\n";
+                $body .= "Message: " . $message . "\r\n";
+        
+                mail($to,$messageSubject,$body);
+
+                $message_sent = true;
+
+            }
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 
@@ -49,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="#">
                             יצירת קשר
                         </a>
                     </li>
@@ -58,7 +84,11 @@
         </div>
     </header>
 
-    <!-- <div id="text2">
+    <?php
+    if($message_sent):
+    ?>
+     
+     <div id="text2">
         <h2 id="ban-title">הפנייה נקלטה בהצלחה</h2>
         <p>
             הפרטים נשמרו, אחזור אליכם בהקדם &#128515;
@@ -71,7 +101,12 @@
                  </button>
             </a>
         </div>
-    </div> -->
+    </div>
+
+
+    <?php
+    else:
+    ?>    
 
     <main class="hero">
         <div id="iconics">
@@ -110,16 +145,23 @@
                         <label for="message"></label>
                         <textarea name="message" id="message" placeholder="תוכן הודעה" tabindex="4"></textarea>
                     </div>
+                    <!-- <input type="submit" value="Send" id="submit" class="btn"> -->
                     <div id="send">
                         <button type="submit" id="details" class="button-55 delete-some" role="button" style="display: block;"><img src="img/notepad.png" alt="">
                             סיום ושליחה
                         </button>
                     </div>
                 </form>
+                <!-- <button class="button-55 delete-some" role="button" style="display: block;"><img src="img/call.png" alt="">
+                    0528089417
+                </button> -->
             </div>
         </div>
 
         <img id="slide-photo" src="img/My project (2).webp" alt="תמונה של יועץ משכנתאות יהודה טנג'י">
+        <!-- <p>
+           <span>ליווי אישי לאורך כל הדרך</span> <br> החיסכון הטוב ביותר בשבילכם
+        </p> -->
         <div id="intro-text">
             <h1> יהודה טנג'י יועץ משכנתאות <br> דואג לשקט הכלכלי של הבית שלכם</h1>
             <p>
@@ -138,7 +180,13 @@
         </div>
     </footer>
 
+
+
     <script src="script.js"></script>
+
+    <?php
+    endif;
+    ?>
 </body>
 
 </html>
