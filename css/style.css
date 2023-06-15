@@ -879,9 +879,12 @@ button img {
     margin-left: 7px !important;
 }
 
-.row3 h2 {
-    width: 80%;
+.row3 h2,.row3 p {
+    width: 85%;
     margin: auto;
+}
+
+.row3 h2 {
     font-size: 30px;
     color: #514d47;
 }
@@ -895,8 +898,40 @@ button img {
     margin-top: 30px;
 }
 
+.row3 .callback-form {
+    margin-bottom: 50px;
+}
 
+.row3 .callback-form input,.row3 textarea {
+    width: 85%;
+}
 
+.row3 p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.row3 iframe {
+    width: 85%;
+    height: 230px;
+    margin: auto;
+    display: block;
+}
+
+.row3 .column-1 {
+    position: relative;
+} 
+
+.row3 #send {
+    width: initial;
+    margin: initial;
+    margin-top: 20px;
+}
+
+.row3 button[type="submit"] {
+    margin-left: initial;
+}
 
 
 @keyframes show-me {
