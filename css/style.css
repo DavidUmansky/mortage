@@ -1065,10 +1065,13 @@ button img {
     }
 
     footer img {
-        width: 95px;
+        width: 130px;
         margin-left: 12px;
     }
 
+    .hero {
+        z-index: 100;
+    }
 
 
 
@@ -1078,10 +1081,6 @@ button img {
 
     footer div {
         height: 16vh;
-    }
-
-    footer img {
-        width: 95px;
     }
 
 }
