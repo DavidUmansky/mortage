@@ -1078,13 +1078,31 @@ button img {
 
 }
 
-
 @media (max-height: 790px) {
     .hero {
         height: 60vh;
     }
+
+    .hero #slide-photo {
+        width: 180px;
+    }
+
 }
 
+@media (max-width: 300px) {
+
+    .hero h1, .hero p {
+        width: 250px;
+    }
+
+    .navbar a {
+        padding: 10px 2px;
+        font-weight: 300;
+    }
+
+
+
+}
 
 
 
