@@ -1064,6 +1064,14 @@ button img {
         display: initial;
     }
 
+    footer img {
+        width: 95px;
+        margin-left: 12px;
+    }
+
+
+
+
 }
 
 @media (max-height: 690px) {
