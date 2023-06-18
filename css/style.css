@@ -1066,7 +1066,7 @@ button img {
 
 }
 
-@media (max-height: 690px) {
+@media (max-height: 780px) {
 
     footer div {
         height: 16vh;
