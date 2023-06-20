@@ -978,6 +978,10 @@ button img {
 
 @media (max-width: 763px) {
 
+    body {
+        overflow: initial !important;
+    }
+
     .hero {
         height: 63vh;
     }
@@ -1287,7 +1291,6 @@ button img {
     #text {
         height: 100% !important;
     }
-
 
 }
 
