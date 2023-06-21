@@ -1,0 +1,51 @@
+.container {
+    width: 625px;
+    height: 450px;
+    background: rgb(96, 155, 96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 60px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: blue;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: red;
+}
+
+.style-one {
+    height: 300px;
+    width: 450px;
+    background: burlywood;
+    margin: auto;
+    margin-bottom: 50px;
+    direction: rtl;
+    text-align: right;
+}
+
+.style-one h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+

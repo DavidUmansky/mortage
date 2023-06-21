@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Silder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img src="img/budget.png" alt="">
+                        <h2>תכנון</h2>
+                        <p>תכנון- 
+                            בשלב הזה נשב יחד אל מול הנתונים ונבדוק את ההון העצמי שלכם, ההכנסות וההתחיבויות העכשוויות והעתידיות שלכם על מנת להתאים לכם את העסקה המתאימה שלכם בכדי שתוכלו להמשיך לנהל את משק הבית בהווה ובעתיד בצורה אחראית.
+                            בסוף שלב התכנון נקבע יעד תקציבי שמתאים לכם ונתאים אותו לגובה העיסקה הצפויה.
+                            שלב התכנון הוא שלב חשוב ומכריע שמשמש לנו כמצפן לעסקה שאנו נכנסים אלייה.
+                            תפקידי לכוון אתכם בצורה אחראית ושקולה על סמך ניסיוני העשיר על מנת שהעסקה תצלח ותשיגו את הכי טוב בשבילכם.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img src="img/budget.png" alt="">
+                        <h2>תכנון</h2>
+                        <p>תכנון- 
+                            בשלב הזה נשב יחד אל מול הנתונים ונבדוק את ההון העצמי שלכם, ההכנסות וההתחיבויות העכשוויות והעתידיות שלכם על מנת להתאים לכם את העסקה המתאימה שלכם בכדי שתוכלו להמשיך לנהל את משק הבית בהווה ובעתיד בצורה אחראית.
+                            בסוף שלב התכנון נקבע יעד תקציבי שמתאים לכם ונתאים אותו לגובה העיסקה הצפויה.
+                            שלב התכנון הוא שלב חשוב ומכריע שמשמש לנו כמצפן לעסקה שאנו נכנסים אלייה.
+                            תפקידי לכוון אתכם בצורה אחראית ושקולה על סמך ניסיוני העשיר על מנת שהעסקה תצלח ותשיגו את הכי טוב בשבילכם.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img src="img/budget.png" alt="">
+                        <h2>תכנון</h2>
+                        <p>תכנון- 
+                            בשלב הזה נשב יחד אל מול הנתונים ונבדוק את ההון העצמי שלכם, ההכנסות וההתחיבויות העכשוויות והעתידיות שלכם על מנת להתאים לכם את העסקה המתאימה שלכם בכדי שתוכלו להמשיך לנהל את משק הבית בהווה ובעתיד בצורה אחראית.
+                            בסוף שלב התכנון נקבע יעד תקציבי שמתאים לכם ונתאים אותו לגובה העיסקה הצפויה.
+                            שלב התכנון הוא שלב חשוב ומכריע שמשמש לנו כמצפן לעסקה שאנו נכנסים אלייה.
+                            תפקידי לכוון אתכם בצורה אחראית ושקולה על סמך ניסיוני העשיר על מנת שהעסקה תצלח ותשיגו את הכי טוב בשבילכם.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>

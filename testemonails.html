@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/interest-rate.png">
+    <!-- <meta name="description"
+        content="סדנת ציור מנדלות בירושלים ובכל הארץ. סדנת ציור מנדלה. סדנת מנדלות בירושלים. שיעור ציור מנדלה. חוג ציור לילדים. סדנת ציור לילדים.">
+    <meta name="keywords"
+        content="סדנת ציור מנדלות, חוג ציור, סדנת ציור מנדלה, סדנת מנדלות בירושלים, שיעור ציור מנדלה, חוג ציור לילדים, טיפול באומנות, סדנת ציור לדתיים, סדנת ציור נפרדת, סדנת ציור ירושלים"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <title>סדנת מנדלות בירושלים ובכל הארץ|ציור מנדלות|חוג ציור|סדנת ציור לילדים|</title> -->
+    <title>יהודה טנג'י - יועץ משכנתאות בכיר</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div id="logo">
+                <img id="slide-photo" src="img/nav-logo.jpg" alt="הלוגו של יהודה טנגי - יועץ משכנתאות">
+                <div id="logo-text">
+                    <span>יהודה טנג'י</span>
+                    <h1>יועץ משכנתאות</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            בית
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            אודות
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">
+                            שירותים
+                        </a>
+                    </li>
+                    <li>
+                        <a class="current" href="testemonails.html">
+                            המלצות
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            יצירת קשר
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="happy">לקוחות מרוצים</h1>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="style-one">
+                            <img class="border-tes" src="img/tes1.png" alt="">
+                            <img class="border-tes" src="img/tes2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="style-one">
+                            <img class="single-tes" src="img/tes3.jpg" alt="">
+                            <img width="350px" src="img/tes4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="style-one">
+                            <img class="border-tes" src="img/tes5.png" alt="">
+                            <img class="border-tes" src="img/tes6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="style-one">
+                            <img width="350px" height="360px" src="img/tes7.png" alt="">
+                            <img width="350px" height="360px" src="img/tes8.png" alt="">
+                            <img width="350px" height="360px" src="img/tes9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="style-one">
+                            <img class="border-tes" src="img/tes10.png" alt="">
+                            <img class="border-tes" src="img/tes11.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
