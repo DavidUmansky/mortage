@@ -38,6 +38,7 @@ if (document.querySelector('#first-a') !== null) {
     let midleA = document.querySelector("#midle-a");
     let lastA = document.querySelector("#last-a");
     let FourA = document.querySelector("#four-a");
+    let FiveA = document.querySelector("#five-a");
     let allElements = document.getElementsByClassName('all-services');
 
     if (firstA.classList.contains('current2')) {
@@ -62,10 +63,15 @@ if (document.querySelector('#first-a') !== null) {
                     allElements[2].classList.remove('active');
                     allElements[0].classList.add('active');
                 } else {
-                    if(FourA.classList.contains('current2')) {
+                    if (FourA.classList.contains('current2')) {
                         FourA.classList.remove('current2');
                         firstA.classList.add('current2')
                         allElements[3].classList.remove('active');
+                        allElements[0].classList.add('active');
+                    } else {
+                        FiveA.classList.remove('current2');
+                        firstA.classList.add('current2')
+                        allElements[4].classList.remove('active');
                         allElements[0].classList.add('active');
                     }
                 }
@@ -90,10 +96,15 @@ if (document.querySelector('#first-a') !== null) {
                     allElements[2].classList.remove('active');
                     allElements[1].classList.add('active');
                 } else {
-                    if(FourA.classList.contains('current2')) {
+                    if (FourA.classList.contains('current2')) {
                         FourA.classList.remove('current2');
                         midleA.classList.add('current2');
                         allElements[3].classList.remove('active');
+                        allElements[1].classList.add('active');
+                    } else {
+                        FiveA.classList.remove('current2');
+                        midleA.classList.add('current2')
+                        allElements[4].classList.remove('active');
                         allElements[1].classList.add('active');
                     }
                 }
@@ -118,10 +129,15 @@ if (document.querySelector('#first-a') !== null) {
                     allElements[0].classList.remove('active');
                     allElements[2].classList.add('active');
                 } else {
-                    if(FourA.classList.contains('current2')) {
+                    if (FourA.classList.contains('current2')) {
                         FourA.classList.remove('current2');
                         lastA.classList.add('current2');
                         allElements[3].classList.remove('active');
+                        allElements[2].classList.add('active');
+                    } else {
+                        FiveA.classList.remove('current2');
+                        lastA.classList.add('current2')
+                        allElements[4].classList.remove('active');
                         allElements[2].classList.add('active');
                     }
                 }
@@ -146,16 +162,57 @@ if (document.querySelector('#first-a') !== null) {
                     allElements[0].classList.remove('active');
                     allElements[3].classList.add('active');
                 } else {
-                    if(lastA.classList.contains('current2')) {
+                    if (lastA.classList.contains('current2')) {
                         lastA.classList.remove('current2');
                         FourA.classList.add('current2');
                         allElements[2].classList.remove('active');
+                        allElements[3].classList.add('active');
+                    } else {
+                        FiveA.classList.remove('current2');
+                        FourA.classList.add('current2')
+                        allElements[4].classList.remove('active');
                         allElements[3].classList.add('active');
                     }
                 }
             }
         }
     });
+
+    FiveA.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (FiveA.classList.contains('current2')) {
+            return;
+        } else {
+            if (midleA.classList.contains('current2')) {
+                midleA.classList.remove('current2');
+                FiveA.classList.add('current2');
+                allElements[1].classList.remove('active');
+                allElements[4].classList.add('active');
+            } else {
+                if (firstA.classList.contains('current2')) {
+                    firstA.classList.remove('current2');
+                    FiveA.classList.add('current2');
+                    allElements[0].classList.remove('active');
+                    allElements[4].classList.add('active');
+                } else {
+                    if (lastA.classList.contains('current2')) {
+                        lastA.classList.remove('current2');
+                        FiveA.classList.add('current2');
+                        allElements[2].classList.remove('active');
+                        allElements[4].classList.add('active');
+                    } else {
+                        FourA.classList.remove('current2');
+                        FiveA.classList.add('current2');
+                        allElements[3].classList.remove('active');
+                        allElements[4].classList.add('active');
+                        
+                    }
+                }
+            }
+        }
+    });
+
+
 
 }
 
