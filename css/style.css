@@ -707,7 +707,7 @@ footer p {
 
 .flex-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 985.33px;
     height: 335px;
