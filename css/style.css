@@ -596,7 +596,7 @@ hr {
 }
 
 .all-services {
-    padding-top: 120px;
+    padding-top: 86px;
 }
 
 
@@ -624,7 +624,7 @@ hr {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 10px;
+    top: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -651,16 +651,16 @@ hr {
 }
 
 #service ul li a.current2, #service ul li a:hover {
-    background-color: #444;
-    color: #f7c08a;
+    background-color: white;
+    color: #d2be67;
 }
 
 #first-a {
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 8px 0px 0px;
 }
 
 #five-a {
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0px 0px 0px;
 }
 
 .hide {
@@ -701,11 +701,19 @@ footer p {
     font-size: 26px;
 }
 
+#service {
+    background: #d2be67;
+}
+
 .flex-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 985.33px;
+    height: 335px;
+    background: white;
+    margin: auto;
+    border-radius: 0px 0px 8px 8px;
 }
 
 #ser-img-father {
@@ -723,7 +731,7 @@ footer p {
     bottom: 0px;
     text-align: center;
     width: 100%;
-    background: rgb(0 0 0 / 58%);
+    background: rgb(81 77 71);
     font-size: 28px !important;
 }
 
@@ -738,11 +746,13 @@ footer p {
     margin-top: 50px;
     font-size: xx-large;
     font-weight: 900;
+    width: 985.33px;
 }
 
 .des-p {
     width: 867px !important;
     margin: auto !important;
+    width: 985.33px !important;
 }
 
 #des-p:last-child {
