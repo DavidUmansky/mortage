@@ -1007,14 +1007,13 @@ iframe {
         background: url(../img/home.jpg) no-repeat top left/cover !important;
     }
 
-
     #hero-2::before {
         background: initial !important;
     }
 
     #galery h2 {
         font-size: 26px;
-        width: 315px;
+        width: 85%;
         text-align: center;
     }
 
@@ -1030,12 +1029,138 @@ iframe {
         flex: 100%;
         max-width: 100%;
     }
-    
-    .lb-nav a.lb-next,.lb-nav a.lb-prev {
+
+    .lb-nav a.lb-next, .lb-nav a.lb-prev {
         opacity: 1 !important;
     }
-    
 
+    #service ul {
+        flex-direction: column;
+        top: 110px;
+    }
+
+    .all-services {
+        padding-top: 283px;
+        background: white;
+    }
+
+    #first-a {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #five-a {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .flex-div {
+        width: 100%;
+        background: #ecd571;
+        flex-direction: column;
+        height: 690px;
+        border-radius: 0px 0px 0px 0px;
+        justify-content: flex-start;
+    }
+
+    #service h2 {
+        width: 85%;
+        margin-top: 30px;
+    }
+
+    .des-p {
+        margin: auto !important;
+        width: 85% !important;
+    }
+
+    .flex-div p {
+        width: 360px !important;
+        margin-right: initial !important;
+        margin-top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #flex1 p {
+        height: 406px;
+    }
+
+    #ser-img, #ser-img2 {
+        width: 100% !important;
+    }
+
+    #ser-img-father h1 {
+        position: initial !important;
+        width: 100% !important;
+    }
+
+    #flex2, #flex3, #flex4, #flex5 {
+        height: 770px;
+    }
+
+    #flex2 p, #flex3 p, #flex4 p, #flex5 p {
+        height: 560px;
+    }
+
+    #flex5 h1 {
+        margin-top: -10px;
+        position: relative !important;
+    }
+}
+
+
+
+
+@media (min-width: 359px) and (max-width: 375px) {
+
+    .flex-div p {
+        width: 330px !important;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+
+    .flex-div {
+        height: 950px;
+    }
+
+    .flex-div p {
+        width: 575px !important;
+    }
+
+    #flex2, #flex3, #flex4,#flex5 {
+        height: 900px;
+    }
+
+    #flex5 h1 {
+        margin-top: -18px;
+    }
+
+}
+
+@media (min-width: 941px) and (max-width: 1002px) {
+
+    #service ul {
+        top: 34px;
+    }
+
+    #service ul li a {
+        font-size: 19px;
+    }
+
+    .flex-div, #flex2, #flex3, #flex4, #flex5 {
+        height: 335px;
+        width: 868.33px;
+    }
+
+}
+
+@media (min-width: 941px) and (max-width: 1014px) {
+
+    .des-p, #service h2 {
+        width: 875.33px !important;
+    }
 
 }
 
@@ -1201,7 +1326,7 @@ iframe {
     #galery h2 {
         width: 265px;
     }
-    
+
     #galery #one-span {
         display: none;
     }
@@ -1210,6 +1335,13 @@ iframe {
         display: none;
     }
 
+    .flex-div p {
+        width: 265px !important;
+    }
+
+    #flex5 {
+        height: 800px;
+    }
 
 }
 
@@ -1502,13 +1634,13 @@ iframe {
 
 }
 
-@media (min-width: 941px) and (max-width: 1000px)  {
+@media (min-width: 941px) and (max-width: 1000px) {
     #profile-img {
         height: 640px;
     }
 }
 
-@media (min-width: 600px) and (max-width: 940px)  {
+@media (min-width: 600px) and (max-width: 940px) {
 
     #profile-img {
         height: 600px;
@@ -1516,7 +1648,27 @@ iframe {
 
 }
 
+@media (min-width: 763px) and (max-width: 782px) {
+    .navbar a {
+        padding: 10px 10px;
+    }
+}
 
+@media (min-width: 360px) and (max-width: 375px) {
+
+    .flex-div p {
+        width: 322px !important;
+    } 
+
+}
+
+@media (min-width: 505px) and (max-width: 599px) and (max-height: 400px) {
+
+    #flex5 {
+        height: 900px;
+    }
+
+}
 
 
 
