@@ -1036,11 +1036,11 @@ iframe {
 
     #service ul {
         flex-direction: column;
-        top: 110px;
+        top: 105px;
     }
 
     .all-services {
-        padding-top: 283px;
+        padding-top: 275px;
         background: white;
     }
 
@@ -1111,7 +1111,7 @@ iframe {
 
 
 
-@media (min-width: 359px) and (max-width: 375px) {
+@media (min-width: 359px) and (max-width: 376px) {
 
     .flex-div p {
         width: 330px !important;
