@@ -1118,8 +1118,8 @@ iframe {
     }
 
     .border-tes {
-        width: 100%;
-        height: 193px;
+        width: 100vw;
+        height: 215px;
     }
 
     #tes-4,#tes-8,#tes-9 {
@@ -1147,7 +1147,7 @@ iframe {
     }
 
     .swiper-button-prev,.swiper-button-next {
-        top: 335px !important;
+        top: 370px !important;
     } 
     
 
