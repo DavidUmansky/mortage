@@ -1118,8 +1118,8 @@ iframe {
     }
 
     .border-tes {
-        width: 302px;
-        height: 150px;
+        width: 100%;
+        height: 193px;
     }
 
     #tes-4,#tes-8,#tes-9 {
@@ -1138,6 +1138,18 @@ iframe {
         display: block;
     }
 
+    .swiper-pagination {
+        bottom: 35px !important;
+        flex-direction: initial;
+        top: initial !important;
+        left: initial !important;
+        display: block;
+    }
+
+    .swiper-button-prev,.swiper-button-next {
+        top: 335px !important;
+    } 
+    
 
 }
 
