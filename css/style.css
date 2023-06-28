@@ -1119,7 +1119,8 @@ iframe {
 
     .border-tes {
         width: 100vw;
-        height: 215px;
+        height: 225px;
+        border: none;
     }
 
     #tes-4,#tes-8,#tes-9 {
@@ -1150,11 +1151,7 @@ iframe {
         top: 370px !important;
     } 
     
-
 }
-
-
-
 
 @media (min-width: 359px) and (max-width: 376px) {
 
@@ -1387,6 +1384,13 @@ iframe {
     #flex5 {
         height: 800px;
     }
+
+    .border-tes {
+        width:230px;
+        height: 153px;
+    }
+
+
 
 }
 
@@ -1691,6 +1695,11 @@ iframe {
         height: 600px;
     }
 
+    .border-tes {
+        width: 80%;
+        height: 245px;
+    }
+
 }
 
 @media (min-width: 763px) and (max-width: 782px) {
@@ -1707,10 +1716,11 @@ iframe {
 
 }
 
-@media (min-width: 505px) and (max-width: 599px) and (max-height: 400px) {
+@media (min-width: 941px) and (max-width: 1250px) {
 
-    #flex5 {
-        height: 900px;
+    .border-tes {
+        width: 395px;
+        height: 195px;
     }
 
 }
