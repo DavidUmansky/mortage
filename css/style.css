@@ -540,7 +540,7 @@ hr {
     margin-top: 20px;
 }
 
-#galery h2 {
+#galery h2, #work h2 {
     font-weight: 400;
     font-size: 40px;
     width: 472px;
@@ -549,7 +549,82 @@ hr {
     position: relative;
 }
 
-#galery hr {
+#work {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+#work h2 {
+    width: initial;
+    margin: initial;
+    text-align: center;
+}
+
+#work img {
+    width: 200px;
+    height: 120px;
+}
+
+.work-con {
+    margin-top: 45px;
+}
+
+.bank-con {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bank1 {
+    object-position: 0px 0px !important;
+}
+
+#bank2 {
+    object-position: 0px -15px !important;
+}
+
+#bank3 {
+    object-position: 0px -19px !important;
+}
+
+#bank4 {
+    object-position: 0px -25px !important;
+    height: 150px !important;
+}
+
+#bank8 {
+    height: 72px !important;
+    margin-top: 22px !important;
+}
+
+#bank9 {
+    width: 180px !important;
+    height: 65px !important;
+    margin-top: 31px !important;
+}
+
+#bank10 {
+    height: 70px !important;
+    margin-top: 35px !important;
+}
+
+#bank11 {
+    height: 56px !important;
+    margin-top: 32px !important;
+}
+
+#bank11 {
+    height: 56px !important;
+    margin-top: 32px !important;
+}
+
+.last-bank-con {
+    margin-top: 40px !important;
+}
+
+#galery hr, #work hr {
     width: 10%;
     margin-top: initial;
     margin-top: 10px;
@@ -562,6 +637,8 @@ hr {
     padding: 0px 5px;
     justify-content: center;
     padding-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 45px;
 }
 
 .column2 {
@@ -948,7 +1025,7 @@ iframe {
 
 #add-z {
     z-index: 100;
-} 
+}
 
 @keyframes show-me {
     to {
@@ -1778,6 +1855,76 @@ iframe {
     }
 }
 
+@media (max-width: 430px) {
+    #rel {
+        position: relative;
+    }
+
+    #hideone, #hidethree {
+        display: none;
+    }
+
+    .bank-con {
+        display: flex;
+        justify-content: initial;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-con {
+        margin-top: 25px;
+    }
+
+    #work {
+        padding-top: 1190px;
+    }
+
+    #work h2 {
+        width: 265px;
+        margin: auto;
+    }
+
+    #work img {
+        width: 320px;
+        height: 192px;
+    }
+
+    #bank3 {
+        object-position: 0px 0px !important;
+    }
+
+    #bank4 {
+        object-position: 0px 0px !important;
+        height: 192px !important;
+    }
+
+    #bank8 {
+        width: 250px !important;
+        height: 150px !important;
+        margin-top: 30px !important;
+    }
+
+    #bank9 {
+        width: 240px !important;
+        height: 130px !important;
+    }
+
+    #bank10 {
+        width: 253px !important;
+        height: 152px !important;
+        margin-top: 85px !important;
+    }
+
+    #bank11 {
+        width: 293px !important;
+        height: 75px !important;
+        margin-top: 76px !important;
+    }
+
+    #bank12 {
+        margin-top: 20px !important;
+    }
 
 
 
+}

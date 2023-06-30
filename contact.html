@@ -6,17 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/interest-rate.png">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <style>
-        #second {
-            position: fixed;
-        }
-    </style>
     <!-- <meta name="description"
         content="סדנת ציור מנדלות בירושלים ובכל הארץ. סדנת ציור מנדלה. סדנת מנדלות בירושלים. שיעור ציור מנדלה. חוג ציור לילדים. סדנת ציור לילדים.">
     <meta name="keywords"
         content="סדנת ציור מנדלות, חוג ציור, סדנת ציור מנדלה, סדנת מנדלות בירושלים, שיעור ציור מנדלה, חוג ציור לילדים, טיפול באומנות, סדנת ציור לדתיים, סדנת ציור נפרדת, סדנת ציור ירושלים"> -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media (min-width: 430px) {
+            #iconics {
+                display: none;
+            }
+        }
+
+        #details {
+            bottom: 410px;
+            left: 10px;
+        }
+
+        @media (min-width: 430px) and (max-width: 762px) {
+            #details {
+                display: block;
+                bottom: 302px;
+            }    
+        }
+    </style>
     <!-- <title>סדנת מנדלות בירושלים ובכל הארץ|ציור מנדלות|חוג ציור|סדנת ציור לילדים|</title> -->
     <title>יהודה טנג'י - יועץ משכנתאות בכיר</title>
 </head>
@@ -63,7 +76,20 @@
         </div>
     </header>
 
-    <main style="padding-bottom: 50px;">
+    <main id="rel" style="padding-bottom: 50px;">
+        <div id="iconics">
+            <a id="hideone" href="https://www.facebook.com/profile.php?id=100085683403251" target="_blank"><img
+                    src="img/facebook (1).png" alt=""></a>
+            <a href="https://wa.me/+972528089417?text=היי+יהודה,+ אשמח+שתחזור+אלי"><img src="img/text-message.png"
+                    alt=""></a>
+            <a id="hidethree" href="mailto: Uditangi@gmail.com"><img src="img/message.png" alt=""></a>
+            <a href="tel:0528089417"><img src="img/telephone.png" alt=""></a>
+        </div>
+        <a href="tel:0528089417">
+            <button id="details" class="button-55 call-free" role="button"><img src="img/call.png" alt="">
+                0528089417
+            </button>
+        </a>
         <h1 id="happy">צרו קשר</h1>
         <section class="flex-columns">
             <div class="row3">
