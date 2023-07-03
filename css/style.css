@@ -548,6 +548,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 200px;
+    margin-top: 235px;
 }
 
 #work h2 {
@@ -629,9 +630,8 @@ hr {
     flex-wrap: wrap;
     padding: 0px 5px;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 65px;
     margin-top: 40px;
-    margin-bottom: 45px;
 }
 
 .column2 {
@@ -1790,10 +1790,6 @@ footer a {
         margin-top: 15px;
     }
 
-    #about-footer {
-        margin-top: 1040px;
-    }
-    
     #details {
         bottom: 1136px !important;
     }
@@ -1820,7 +1816,7 @@ footer a {
     }
 
     #work {
-        padding-top: 1190px;
+        padding-top: 1050px;
     }
 
     #work h2 {
@@ -1999,12 +1995,6 @@ footer a {
     }
 }
 
-@media (min-width: 800px)  {
-    #index-body {
-        overflow: hidden;
-    }
-}
-
 @media (max-width: 431px) {
     #about-footer {
         margin-top: 1040px;
@@ -2012,4 +2002,11 @@ footer a {
     
 }
 
+@media (min-width: 866px) and (max-width: 940px) {
+
+    .row3 h2 {
+        margin-top: 70px;
+    }
+
+}
 
