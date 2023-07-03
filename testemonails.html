@@ -14,21 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- <title>סדנת מנדלות בירושלים ובכל הארץ|ציור מנדלות|חוג ציור|סדנת ציור לילדים|</title> -->
     <title>יהודה טנג'י - יועץ משכנתאות בכיר</title>
-    <style>
-        /* main {
-            background: url(img/house-7497002_1280.png) no-repeat center top/cover;
-        } */
-
-        /* main:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        } */
-    </style>
 </head>
 
 <body>
@@ -73,7 +58,56 @@
         </div>
     </header>
 
+<!-- <main>
+    <div id="text2">
+        <h2 id="ban-title">הפנייה נקלטה בהצלחה</h2>
+        <p>
+            הפרטים נשמרו, אחזור אליכם בהקדם &#128515;
+        </p>
+        <div>
+            <img src="img/306159472_104538199078960_4718250514849944119_n.jpg" alt="">
+            <a href="index.html">
+                <button id="details" class="button-55 call-free" role="button"> 
+                        חזרה לאתר
+                 </button>
+            </a>
+        </div>
+    </div>
+</main> -->
+
+
     <main>
+        <div id="overlay">
+            <div id="text">
+                <img id="close-button" src="img/failed.png" alt="">
+                <h2 id="ban-title">השארת פרטים לחזרה</h2>
+                <p>השאירו פרטים ויחזרו אליכם בהקדם</p>
+                <form action="#" method="POST" class="callback-form">
+                    <div class="form-control">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="שם פרטי ומשפחה" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="כתובת מייל">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone"></label>
+                        <input type="phone" name="phone" id="phone" placeholder="מספר טלפון" required>
+                    </div>
+                    <div style="height: initial;" class="form-control">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="תוכן הודעה" required></textarea>
+                    </div>
+                    <div id="send">
+                        <button type="submit" class="button-55 delete-some" role="button" style="display: block;"><img
+                                src="img/notepad.png" alt="">
+                            סיום ושליחה
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <h1 id="happy">לקוחות מרוצים</h1>
         <div class="container" id="con-1">
             <!-- Slider main container -->
@@ -113,10 +147,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
+
                 <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
@@ -125,77 +158,73 @@
 
         <div class="container" id="con-2"">
             <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="single-tes" src="img/tes3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes6.png" alt="">
-                        </div>
-                    </div>
-                     <div class="swiper-slide">
-                        <div class="style-one">
-                            <img width="350px" height="360px" src="img/tes7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="style-one">
-                            <img class="border-tes" src="img/tes11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide hide-slide">
-                        <div class="style-one">
-                            <img width="350px" src="img/tes4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide hide-slide">
-                        <div class="style-one">
-                            <img width="350px" src="img/tes8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide hide-slide">
-                        <div class="style-one">
-                            <img width="350px" src="img/tes9.png" alt="">
-                        </div>
+            <div class=" swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="single-tes" src="img/tes3.jpg" alt="">
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes5.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes6.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img width="350px" height="360px" src="img/tes7.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes10.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="style-one">
+                        <img class="border-tes" src="img/tes11.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide hide-slide">
+                    <div class="style-one">
+                        <img width="350px" src="img/tes4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide hide-slide">
+                    <div class="style-one">
+                        <img width="350px" src="img/tes8.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide hide-slide">
+                    <div class="style-one">
+                        <img width="350px" src="img/tes9.png" alt="">
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
-
-
+        </div>
 
     </main>
 
