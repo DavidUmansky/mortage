@@ -82,14 +82,14 @@ body {
 }
 
 .hero, #hero-2 {
-    background: url(../img/blue-house-with-blue-roof-sky-background.jpg) no-repeat center center/cover;
+    background: url(../img/blue-house-with-blue-roof-sky-background.webp) no-repeat center center/cover;
     height: 530px;
     position: relative;
 }
 
 .hero {
     height: 56vh;
-    background: url(../img/house.jpg) no-repeat center center/cover;
+    background: url(../img/house.webp) no-repeat center center/cover;
     position: relative;
 }
 
@@ -548,7 +548,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 200px;
-    margin-top: 235px;
+    margin-top: 270px;
 }
 
 #work h2 {
@@ -1095,7 +1095,7 @@ footer a {
     }
 
     #hero-2 {
-        background: url(../img/home.jpg) no-repeat top left/cover !important;
+        background: url(../img/home.webp) no-repeat top left/cover !important;
     }
 
     #hero-2::before {
@@ -1488,6 +1488,10 @@ footer a {
 
     .hero p, #text p {
         width: 600px;
+    }
+
+    #work {
+        margin-top: 350px !important;
     }
 }
 
