@@ -1829,6 +1829,14 @@ footer a {
         height: 192px;
     }
 
+    #bank1 {
+        object-position: 0px 15px !important;
+    }
+    
+    #bank2 {
+        object-position: 0px 0px !important;
+    }
+    
     #bank3 {
         object-position: 0px 0px !important;
     }
